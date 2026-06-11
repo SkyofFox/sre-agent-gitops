@@ -2,11 +2,11 @@
 ## 描述：
   基于GitOps+LLM的k8s集群自愈agent，自动感知Pod崩溃告警，通过大模型决策并执行重启，实现一个简易运维自动化
 ## 核心特性
-✅ 自动感知：自动检测Prometheus的PodCrashLoopBackOff告警，无需人工介入
-✅ 智能决策：基于Ollama部署的Qwen2.5大模型，动态判断是否需要重启Pod
-✅ GitOps全流程：ArgoCD接管所有组件部署，实现声明式配置、状态收敛，减少人工出错可能性
-✅ 云原生架构：基于K8s 1.32+Containerd+Calico，符合生产级部署规范
-✅ 可观测性：Prometheus+Grafana覆盖集群监控、告警、可视化全链路
+✅ 自动感知：自动检测Prometheus的PodCrashLoopBackOff告警，无需人工介入\n
+✅ 智能决策：基于Ollama部署的Qwen2.5大模型，动态判断是否需要重启Pod\n
+✅ GitOps全流程：ArgoCD接管所有组件部署，实现声明式配置、状态收敛，减少人工出错可能性\n
+✅ 云原生架构：基于K8s 1.32+Containerd+Calico，符合生产级部署规范\n
+✅ 可观测性：Prometheus+Grafana覆盖集群监控、告警、可视化全链路\n
 ## 技术栈
 ### 开发：
   - 语言：Golang（k8s client-go，容器化适配）
